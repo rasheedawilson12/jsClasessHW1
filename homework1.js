@@ -21,10 +21,10 @@ class Hamster {
 }
 
 const hammy = new Hamster("Sandy");
-// console.log(hammy)
-// hammy.wheelRun()
-// hammy.eatFood()
-// hammy.getPrice()
+console.log(hammy);
+hammy.wheelRun();
+hammy.eatFood();
+hammy.getPrice();
 
 // Person
 class Person {
@@ -98,3 +98,32 @@ timmy.buyHamster("Gus");
 timmy.ageUp(15);
 timmy.eat(2);
 timmy.exercise(2);
+
+// Chef Makes Dinners
+class Dinner {
+  constructor(appetizer, entree, dessert) {
+    this.appetizer = appetizer;
+    this.entree = entree;
+    this.dessert = dessert;
+  }
+}
+
+class Chef extends Dinner {
+  constructor(appetizer, entree, dessert) {
+    super(appetizer, entree, dessert);
+  }
+  // Method that takes three arguements
+  //   dinnerTime(menu, drink, bill) {
+  //     if ()
+  // }
+}
+
+const meal1 = new Dinner("onigiri", "ramen", "mochi");
+
+const meal2 = new Dinner("fried mozzerlla", "ramen", "mochi");
+
+const meal3 = new Dinner("brushetta", "pasta", "gelato");
+
+console.log(meal1);
+console.log(meal2);
+console.log(meal3);
